@@ -1,59 +1,32 @@
-## Introduction
+`setTimeout()` is a JavaScript function that allows you to schedule a piece of code to run after a specified amount of time. 
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+It takes two arguments:
 
-### What you will make
++ **Function** You provide setTimeout with a function that you want it to run. This function is often referred to as the 'callback', because it gets called after a specified delay.
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
++ **Delay:** You specify the amount of time (in milliseconds) to wait before running the function.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+### Here is an example:
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
----
-### Hardware
-
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
+language: js
+filename:
+line_numbers: true
+line_number_start: 1
+line_highlights: 
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
 
---- /collapse ---
+function delayedFunction() {
+    console.log("2 seconds have passed");
+}
+setTimeout(delayedFunction, 2000);
 
---- collapse ---
----
-title: Additional information for educators
----
+--- /code ---
 
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
+Line 1 defines the function and the callback.
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+Line 4 calls setTimeout with two arguments:
+1) the function (`delayedFunction`)
+2) the delay in milliseconds (`2000`) 
