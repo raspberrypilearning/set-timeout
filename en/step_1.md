@@ -19,7 +19,7 @@ line_highlights:
 
 
 function delayedFunction() {
-    console.log("2 seconds have passed");
+  console.log("2 seconds have passed");
 }
 setTimeout(delayedFunction, 2000);
 
