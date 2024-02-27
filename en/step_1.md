@@ -25,7 +25,7 @@ setTimeout(delayedFunction, 2000);
 
 --- /code ---
 
-Line 1 defines the function and the callback.
+Lines 1-3 define the function.
 
 Line 4 calls setTimeout with two arguments:
 1) the function (`delayedFunction`)
